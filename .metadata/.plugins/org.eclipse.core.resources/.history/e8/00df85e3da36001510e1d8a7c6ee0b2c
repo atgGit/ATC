@@ -1,0 +1,15 @@
+public abstract class SubSystem {
+
+	protected boolean status = false;
+
+	public abstract int addEnergy(int tranferAmount);
+
+	public abstract int getEneregyLevel();
+
+	protected int energyLevel = 10000;
+
+	public SubSystem() {
+		super();
+	}
+
+}

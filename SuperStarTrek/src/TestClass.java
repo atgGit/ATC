@@ -40,7 +40,7 @@ public class TestClass
 	public void testShipEnergyByDefault()
 	{
 		Ship ship = new Ship();
-		Assert.assertEquals(1000000, ship.getEneregyLevel());
+		Assert.assertEquals(10000, ship.getEneregyLevel());
 	}
 	
 	@Test
@@ -49,7 +49,7 @@ public class TestClass
 		Ship ship = new Ship();
 		int tranferAmount = 1000;
 		ship.transfer("shield", tranferAmount);
-		Assert.assertEquals(1000000, ship.getEneregyLevel());
+		Assert.assertEquals(10000, ship.getEneregyLevel());
 		
 	}
 	
@@ -61,6 +61,28 @@ public class TestClass
 		ship.transfer("shield", tranferAmount);
 		Assert.assertEquals(10000, ship.getShield().getEneregyLevel());
 	}
+	
+	@Test
+	public void testDamageIfShieldRaised ()
+	{
+		Ship ship = new Ship();
+		ship.getShield().raise();
+		int currentEnergyLevel = ship.getShield().getEneregyLevel();
+		ship.damage(100, "Shield");
+		
+		Assert.assertEquals(currentEnergyLevel-100, ship.getShield().getEneregyLevel());
+	}
+	
+	@Test
+	public void testDamageToShieldIfShieldNotRaised ()
+	{
+		Ship ship = new Ship();
+		int currentEnergyLevel = ship.getShield().getEneregyLevel();
+		ship.damage(100, "Shield");
+		
+		Assert.assertEquals(currentEnergyLevel-100, ship.getShield().getEneregyLevel());
+	}
+	
 	
 	
 

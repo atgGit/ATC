@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Ship 
+{
+	int totalEnergyLevel;
+
+	private HashMap<String, SubSystem> subSystems = new HashMap<String, SubSystem> (10);
+	
+	public Ship()
+	{
+		subSystems.put("Shield",new Shield());
+	}
+		
+	public int getEneregyLevel() {
+		
+		//for (subsystem s:)
+		return totalEnergyLevel;
+	}
+	
+	
+
+	public void transfer(String subSystemString, int tranferAmount) 
+	{		
+		if (subSystemString.equals("Shield")) { 
+			int tranfferedAmount = shield.addEnergy(tranferAmount);
+			totalEnergyLevel = totalEnergyLevel - tranfferedAmount;
+		}
+	}
+
+	public Shield getShield() {
+		return shield;
+	}
+	
+
+}

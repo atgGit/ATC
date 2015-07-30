@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+
+public class Ship 
+{
+	int totalEnergyLevel;
+
+	private ArrayList<SubSystem> subsystems = new ArrayList<SubSystem> (10);
+	
+	private Shield shield = new Shield();
+	
+	public int getEneregyLevel() {
+		
+		return totalEnergyLevel;
+	}
+
+	public void transfer(String subSystemString, int tranferAmount) 
+	{		
+		if (subSystemString.equals("Shield")) { 
+			int tranfferedAmount = shield.addEnergy(tranferAmount);
+			totalEnergyLevel = totalEnergyLevel - tranfferedAmount;
+		}
+	}
+
+	public Shield getShield() {
+		return shield;
+	}
+	
+
+}

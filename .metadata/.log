@@ -43,3 +43,24 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.ratio
 
 !ENTRY org.eclipse.ui 4 4 2015-07-30 08:37:25.848
 !MESSAGE Invalid preference page path: Field Assist
+!SESSION 2015-07-30 12:36:48.773 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows 7 amd64-64 Compressed References 20140106_181350 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR6_20140106_1601_B181350
+JIT  - r11.b05_20131003_47443.02
+GC   - R26_Java726_SR6_20140106_1601_B181350_CMPRSS
+J9CL - 20140106_181350
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rsa4ws.product.v85.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rsa4ws.product.v85.ide
+
+!ENTRY org.eclipse.ui 2 0 2015-07-30 12:36:52.614
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2015-07-30 12:36:52.614
+!MESSAGE Commands should really have a category: plug-in='com.ibm.xtools.modeler.ui.diagrams.statechart', id='com.ibm.xtools.modeler.ui.diagrams.statechart.moveLeft', categoryId='com.ibm.xtools.modeler.ui.diagrams.statechart.moveTransitiontools.modeler.ui.diagrams.statechart.moveTransition'
+
+!ENTRY org.eclipse.ui 4 4 2015-07-30 12:36:55.939
+!MESSAGE Invalid preference page path: Service Testing
+
+!ENTRY org.eclipse.ui 4 4 2015-07-30 12:36:55.942
+!MESSAGE Invalid preference page path: Field Assist

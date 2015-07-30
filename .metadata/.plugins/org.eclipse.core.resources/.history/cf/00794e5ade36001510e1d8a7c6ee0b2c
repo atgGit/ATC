@@ -1,0 +1,46 @@
+import java.util.*;
+
+
+
+
+public class Ship 
+{
+	int totalEnergyLevel;
+
+	private HashMap<String, SubSystem> subSystems = new HashMap<String, SubSystem> (10);
+	
+	public Ship()
+	{
+		subSystems.put("Shield",new Shield());
+	}
+		
+	public int getEneregyLevel() {
+		
+		Set set = subSystems.entrySet();
+	    Iterator iterator = set.iterator();
+
+	    int total = 0;
+		 while(iterator.hasNext()) {
+	         SubSystem s = (SubSystem)iterator.next();
+	         total += s.getEneregyLevel();
+	      }
+
+		return total;
+	}
+	
+	
+
+	public void transfer(String subSystemString, int tranferAmount) 
+	{		
+		if (subSystemString.equals("Shield")) { 
+			int tranfferedAmount = shield.addEnergy(tranferAmount);
+			totalEnergyLevel = totalEnergyLevel - tranfferedAmount;
+		}
+	}
+
+	public Shield getShield() {
+		return (Shield) subSystems.get("Shield");
+	}
+	
+
+}

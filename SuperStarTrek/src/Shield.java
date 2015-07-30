@@ -1,8 +1,9 @@
 
-public class Shield {
+public class Shield extends SubSystem {
 
-	private boolean status = false;
-	private int energyLevel = 10000;
+	
+	
+	int energyLevel = 10000;
 	
 	public void raise() {
 		
@@ -19,11 +20,13 @@ public class Shield {
 		
 	}
 
+	@Override
 	public int getEneregyLevel() {
 		return energyLevel;
 		
 	}
 
+	@Override
 	public int addEnergy(int tranferAmount)
 	{
 		if (energyLevel + tranferAmount < 10000)
@@ -36,6 +39,10 @@ public class Shield {
 		else // partial
 			energyLevel = 10000;
 			return 10000 - tranferAmount;			
+	}
+
+	public void damage(int i) {
+		energyLevel -= i;
 	}
 
 }

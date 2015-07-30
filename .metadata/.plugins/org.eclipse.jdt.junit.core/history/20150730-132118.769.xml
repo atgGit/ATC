@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestClass" project="SuperStarTrek" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="TestClass" time="0.004">
+    <testcase name="testShieldUp" classname="TestClass" time="0.0"/>
+    <testcase name="testShieldDownByDefault" classname="TestClass" time="0.001"/>
+    <testcase name="testShieldDown" classname="TestClass" time="0.0"/>
+    <testcase name="testShieldEnergyLevelByDefault" classname="TestClass" time="0.0"/>
+    <testcase name="testShipEnergyByDefault" classname="TestClass" time="0.002"/>
+    <testcase name="testTransferEnergyofShipafterTransfer" classname="TestClass" time="0.0"/>
+    <testcase name="testTransferEnergyofShieldafterTransfer" classname="TestClass" time="0.0"/>
+    <testcase name="testDamageIfShieldRaised" classname="TestClass" time="0.001"/>
+    <testcase name="testDamageIfShieldNotRaised" classname="TestClass" time="0.0"/>
+  </testsuite>
+</testrun>

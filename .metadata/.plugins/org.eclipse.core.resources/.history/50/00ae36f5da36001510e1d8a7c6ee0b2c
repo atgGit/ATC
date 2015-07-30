@@ -1,0 +1,25 @@
+
+public class Ship 
+{
+	int energyLevel = 1000000;
+	private SubSystem shield = new Shield();
+	
+	public int getEneregyLevel() {
+		
+		return energyLevel;
+	}
+
+	public void transfer(String subSystemString, int tranferAmount) 
+	{		
+		if (subSystemString.equals("Shield")) { 
+			int tranfferedAmount = shield.addEnergy(tranferAmount);
+			energyLevel = energyLevel - tranfferedAmount;
+		}
+	}
+
+	public Shield getShield() {
+		return (Shield) shield;
+	}
+	
+
+}
