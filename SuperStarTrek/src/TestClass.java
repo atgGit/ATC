@@ -1,0 +1,38 @@
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+public class TestClass 
+{
+      @Test
+      public void testShieldUp()
+      {
+            Shield shield = new Shield();
+            shield.raise();
+            Assert.assertTrue(shield.isUp());
+      }
+      
+      @Test
+      public void testShieldDownByDefault()
+      {
+            Shield shield = new Shield();
+            Assert.assertFalse(shield.isUp());
+      }
+      
+      @Test
+      public void testShieldDown()
+      {
+            Shield shield = new Shield();
+            shield.raise();
+            shield.lower();
+            Assert.assertFalse(shield.isUp());
+      }
+      
+      
+      
+
+}
+
+
