@@ -1,0 +1,16 @@
+
+public class Shield {
+
+	
+	
+	public void raise() {
+		
+		
+	}
+
+	public boolean isUp() {
+		
+		return true;
+	}
+
+}

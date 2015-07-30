@@ -1,0 +1,12 @@
+
+public class Ship 
+{
+	int energyLevel = 1000000;
+	
+	public int getEneregyLevel() {
+		
+		return energyLevel;
+	}
+	
+
+}

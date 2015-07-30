@@ -1,0 +1,5 @@
+1438186892054	Extract method 'determineDamage'
+1438189243096	Extract method 'calculateDamage'
+1438189853413	Rename field 'e'
+1438190986972	Rename field 'energyInGame'
+1438191057463	Rename field 't'

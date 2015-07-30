@@ -1,0 +1,31 @@
+
+public class Shield {
+
+	private boolean status = false;
+	private int energyLevel = 10000;
+	
+	public void raise() {
+		
+		status = true;
+	}
+
+	public boolean isUp() {
+		
+		return status;
+	}
+
+	public void lower() {
+		status = false;
+		
+	}
+
+	public int getEneregyLevel() {
+		return energyLevel;
+		
+	}
+
+	public void addEnergy(int tranferAmount) {
+		energyLevel += tranferAmount;
+	}
+
+}
